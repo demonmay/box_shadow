@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX AND TEXT SHADOW</title>
+    <style>
+        .container{
+            display:flex;
+        }
+        .block{
+            background-color:coral;
+            font-size:22px;
+            padding:18px;
+            margin:23px 18px;
+            /* box-shadow is used to give a shadow highlighting prperty for the box it has different values */
+            /* box-shadow:x-offset y-offset color*/
+            box-shadow: 12px 15px green;
+
+            /* also we can use negative values pixel and for that the shadow will come at left and top instead of right and bottom */
+            box-shadow: -12px -15px green;
+
+            /* or box-shadow:x-offset y-offset blur-radius color */
+        
+            /* this blur radius brigns the lightness in color that is blurness which makes an glittering color so on 
+            increasing blur-radius color becomes more blur  */
+            box-shadow:12px 15px 12px green;
+
+            /* or box-shadow:x-offset y-offset blur-radius spread-radius color */
+            /* this spread radius spreads the shadow color in all the direction */
+
+            /* rgba coloring can be used to give color where a means alpha which brings the lightness and darkness of color */
+            /* Now if we want that this shadow should come inside the box we use inset */
+            box-shadow: inset 12px 15px green;
+
+            /* also for giving multiple shadows that is of different width and color we can use comma to give multiple shadows */
+            box-shadow: 12px 15px green,13px 20px red;
+        }
+        h2{
+              /* similarly we have text-shadow */
+              text-shadow:3px 4px white;
+              /* this is also used to highlight important text */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="block" id="block-1">
+            <h2>1ST BLOCK</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae nemo excepturi voluptates odio
+                debitis exercitationem velit assumenda et, temporibus voluptatum, quas unde accusantium esse tempora,
+                dolorum quaerat ipsa sit veniam inventore fugiat. Ipsam, veniam?</p>
+        </div>
+        <div class="block" id="block-2">
+            <h2>2nd BLOCK</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae nemo excepturi voluptates odio
+                debitis exercitationem velit assumenda et, temporibus voluptatum, quas unde accusantium esse tempora,
+                dolorum quaerat ipsa sit veniam inventore fugiat. Ipsam, veniam?</p>
+        </div>
+        <div class="block" id="block-3">
+            <h2>3rd BLOCK</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae nemo excepturi voluptates odio
+                debitis exercitationem velit assumenda et, temporibus voluptatum, quas unde accusantium esse tempora,
+                dolorum quaerat ipsa sit veniam inventore fugiat. Ipsam, veniam?</p>
+        </div>
+    </div>
+</body>
+
+</html>
